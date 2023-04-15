@@ -1,41 +1,19 @@
 CLI: revanced-cli-2.21.0-all.jar  
-Integrations: revanced-integrations-0.101.30.apk  
-Patches: revanced-patches-2.168.30.jar  
+Integrations: revanced-integrations-0.102.0.apk  
+Patches: revanced-patches-2.168.0.jar  
 
-YouTube
-==
-- add `hide-double-tap-overlay-filter` patch https://github.com/inotia00/ReVanced_Extended/issues/258
-- add `hide-search-terms` patch https://github.com/inotia00/ReVanced_Extended/issues/657
-- add `Disable default video speed in live stream` settings https://github.com/inotia00/ReVanced_Extended/issues/626
-- add `Hide ticket shelf` settings https://github.com/inotia00/ReVanced_Extended/issues/687
-- remove video ads whitelist settings (no longer valid)  https://github.com/inotia00/ReVanced_Extended/issues/652
-- feat(general-ads): hide new type of ad https://github.com/inotia00/ReVanced_Extended/issues/528
-- fix(custom-seekbar-color): do not show Toast when exception occurs https://github.com/inotia00/ReVanced_Extended/issues/679
-- fix(default-video-speed): speed value not saved when changing video speed in settings
-- fix(settings): dark theme not applied in ReVanced settings https://github.com/inotia00/ReVanced_Extended/issues/690
-- fix(sponsorblock): slight audio delay when skipping segments https://github.com/inotia00/ReVanced_Extended/issues/682
-- refactor(sponsorblock): reflect the official ReVanced's source code
-- crowdin translation update
-`Arabic`, `Belarusian`, `Brazilian`, `Chinese Simplified`, `Chinese Traditional`, `French`, `German`, `Greek`, `Hungarian`, `Italian`, `Japanese`, `Korean`, `Polish`, `Russian`, `Spanish`, `Ukrainian`, `Vietnamese`
+### [2.168.0](https://github.com/revanced/revanced-patches/compare/v2.167.1...v2.168.0) (2023-04-13)
+### Features
+* **youtube/spoof-signature-verification:** enable by default ([#1896](https://github.com/revanced/revanced-patches/issues/1896)) ([0f8155f](https://github.com/revanced/revanced-patches/commit/0f8155fa6940130f9ae08aecbeaee4d9c903a863))
+* **youtube/spoof-signature-verification:** enable by default ([#1896](https://github.com/revanced/revanced-patches/issues/1896)) ([51d09e3](https://github.com/revanced/revanced-patches/commit/51d09e3fbc0bd2cb40db4f8904be68aec9f0b809))
+* **youtube/spoof-signature-verification:** enable by default ([#1896](https://github.com/revanced/revanced-patches/issues/1896)) ([9673318](https://github.com/revanced/revanced-patches/commit/9673318ea8b217f2043c0710a1857f96f87f670a))
+* **youtube/spoof-signature-verification:** enable by default ([#1896](https://github.com/revanced/revanced-patches/issues/1896)) ([774e45e](https://github.com/revanced/revanced-patches/commit/774e45ed50bb15adb2b55d103ff7bfae38570056))
 
-
-YouTube Music
-==
-- crowdin translation update
-`Chinese Traditional`
-
-
-※ Compatible ReVanced Manager: v0.0.57
-※ If you want to contribute to the translation, refer below
-
-[Crowdin translation]
-- [European Countries](https://crowdin.com/project/revancedextendedeu)
-- [Other Countries](https://crowdin.com/project/revancedextended)
   
 **App Versions:**  
-YouTube: 18.13.38  
-Music (arm64-v8a): 5.51.51  
-Music (arm-v7a): 5.51.51  
+YouTube: 18.05.40  
+Music (arm64-v8a): 5.39.52  
+Music (arm-v7a): 5.39.52  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
 

@@ -35,6 +35,7 @@ enabled = true # whether to build the app. default: true
 version = "auto" # 'auto', 'latest', 'beta' or a custom one e.g. '17.40.41'. default: auto
 # 'auto' option gets the latest possible version supported by all the included patches
 # 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
+include-stock = true # includes stock apk in the module
 build-mode = "both" # 'both', 'apk' or 'module'. default: apk
 excluded-patches = "some-patch some-other-path" # whitespace seperated list of patches to exclude. default: "" (empty)
 included-patches = "patch-name" # whitespace seperated list of patches to include, all default patches are included by default. default: "" (empty)
@@ -49,6 +50,3 @@ arch = "arm64-v8a" # 'arm64-v8a', 'arm-v7a' or 'all'. default: all
 # arch option is sometimes needed to be able to download the apks from apkmirror.
 # and does not affect anything else
 ```
-
-# Building ReVanced Extended
-Use [`config-rv-ex.toml`](./config-rv-ex.toml) as the config. Or you can run build.sh as: `./build.sh config-rv-ex.toml`

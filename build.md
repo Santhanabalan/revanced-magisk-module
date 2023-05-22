@@ -1,10 +1,9 @@
 YouTube: 18.16.37  
 YouTube-Extended: 18.17.43  
-Music-arm64: 5.39.52  
-Music-arm: 5.39.52  
-Twitch: 14.6.1  
-Twitter: 9.89.0-release.1  
-TikTok: 27.8.3  
+Music (arm64-v8a): 5.39.52  
+Music (arm-v7a): 5.39.52  
+Music-Extended (arm64-v8a): 6.02.53  
+Music-Extended (arm-v7a): 6.02.53  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
 
@@ -40,7 +39,6 @@ YouTube Music
 - [European Countries](https://crowdin.com/project/revancedextendedeu)
 - [Other Countries](https://crowdin.com/project/revancedextended)
 ---
-  
 CLI: j-hc/revanced-cli-2.22.0-all.jar  
 Integrations: revanced/revanced-integrations-0.107.0.apk  
 Patches: revanced/revanced-patches-2.173.0.jar  
@@ -54,5 +52,4 @@ Patches: revanced/revanced-patches-2.173.0.jar
 * **youtube:** bump compatibility to `18.16.37` ([fe3fdd5](https://github.com/revanced/revanced-patches/commit/fe3fdd5c6cb186bcebc2f86b1d5b597109b25cb6))
 * **youtube:** support version `18.16.37` ([8beb5ea](https://github.com/revanced/revanced-patches/commit/8beb5ea860284be915c0ef0c6039821a50c14fa8))
 
----
-    
+---  

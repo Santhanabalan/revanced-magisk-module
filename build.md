@@ -1,8 +1,8 @@
-YouTube: 18.19.35  
-YouTube-Extended: 18.17.43  
+YouTube: 18.23.35  
+YouTube-Extended: 18.25.39  
 Music (arm64-v8a): 6.08.50  
-Music (arm-v7a): 6.08.50  
 Music-Extended (arm64-v8a): 6.08.50  
+Music (arm-v7a): 6.08.50  
 Music-Extended (arm-v7a): 6.08.50  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube or YT Music  
@@ -12,39 +12,59 @@ Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for
 ---
 Changelog:  
 CLI: j-hc/revanced-cli-2.22.0-all.jar  
-Integrations: inotia00/revanced-integrations-0.107.10.apk  
-Patches: inotia00/revanced-patches-2.173.10.jar  
+Integrations: inotia00/revanced-integrations-0.111.6.apk  
+Patches: inotia00/revanced-patches-2.181.6.jar  
 
 YouTube
 ==
-- feat(youtube/default-video-quality): rollback to previous commit
-- feat(youtube/hide-general-ads): added some exceptions
-- feat(youtube/hide-seekbar): updated patch description https://github.com/inotia00/ReVanced_Extended/issues/1013
-- fix(youtube/protobuf-spoof): playing a clip will play the video from the start https://github.com/inotia00/ReVanced_Extended/issues/999
-- fix(youtube/protobuf-spoof): subtitles appear at top when you watch related shorts https://github.com/inotia00/ReVanced_Extended/issues/1011
-- fix(youtube/sponsorblock): not reflected in the patch information
+- feat(youtube/video-id-without-shorts-hook): improve patching speed
 - feat(youtube/translations): update translation
-`Chinese Simplified`, `Greek`, `Indonesian`, `Italian`, `Japanese`, `Russian`, `Spanish`, `Vietnamese`
+`Bulgarian`, `Chinese Traditional`, `French`, `German`, `Greek`, `Hungarian`, `Indonesian`, `Japanese`, `Korean`, `Russian`, `Ukrainian`, `Vietnamese`
 
 
 YouTube Music
 ==
-- feat(music/hide-new-playlist-button): change patch name https://github.com/inotia00/ReVanced_Extended/issues/983
+- fix(music/spoof-app-version): patch not applied https://github.com/inotia00/ReVanced_Extended/issues/1082
 - feat(music/translations): update translation
-`Chinese Simplified`
+`Korean`
 
 
-※ Compatible ReVanced Manager: v1.1.0
+Reddit
+==
+- feat(reddit/hide-navigation-buttons): constrain to version 2023.16.1 https://github.com/inotia00/ReVanced_Extended/issues/1068
+- fix(reddit/reddit-settings): use boolean as the type of json options https://github.com/inotia00/ReVanced_Extended/issues/1067
+
+
+Etc
+==
+- build: bump gradle dependencies
+
+
+※ Compatible ReVanced Manager: [RVX Manager v1.3.8 (fork)](https://github.com/inotia00/revanced-manager/releases/tag/v1.3.8)
 [Crowdin translation]
 - [European Countries](https://crowdin.com/project/revancedextendedeu)
 - [Other Countries](https://crowdin.com/project/revancedextended)
 ---
 CLI: j-hc/revanced-cli-2.22.0-all.jar  
-Integrations: revanced/revanced-integrations-0.111.1.apk  
-Patches: revanced/revanced-patches-2.180.0.jar  
+Integrations: revanced/revanced-integrations-0.112.0.apk  
+Patches: revanced/revanced-patches-2.182.0.jar  
 
-### [2.180.0](https://github.com/revanced/revanced-patches/compare/v2.179.0...v2.180.0) (2023-07-01)
+### [2.182.0](https://github.com/revanced/revanced-patches/compare/v2.181.0...v2.182.0) (2023-07-08)
+
+
+### Bug Fixes
+
+* **youtube/hide-layout-components:**  hide mix playlists ([33a87bd](https://github.com/revanced/revanced-patches/commit/33a87bd6eac1639687ebdf96ef8924cd674f81e4))
+
+
 ### Features
-* use clearer descriptions for patches ([ff3ca30](https://github.com/revanced/revanced-patches/commit/ff3ca30e31f4d603b80d35e150f49d996acf9988))
+
+* **pixiv:** add `hide-ads` patch ([#2578](https://github.com/revanced/revanced-patches/issues/2578)) ([862a7ec](https://github.com/revanced/revanced-patches/commit/862a7ec5b0767c28e79454a44218069d3e9cbac7))
+* remove unnecessary notice ([7e9f0b2](https://github.com/revanced/revanced-patches/commit/7e9f0b2d02e910984f08777fefcd2ad7df6a21ee))
+* **slideforreddit:** add `change-oauth-client-id` patch ([#2571](https://github.com/revanced/revanced-patches/issues/2571)) ([8cd60ee](https://github.com/revanced/revanced-patches/commit/8cd60eea36bd49514ed1c42bf362dce7e9675fca))
+* **youtube:** support versions `18.20.39` and `18.23.35` ([#2461](https://github.com/revanced/revanced-patches/issues/2461)) ([d20fde1](https://github.com/revanced/revanced-patches/commit/d20fde1e57077fe9a943f9782b415d7a0249b083))
+
+
+
 
 ---  

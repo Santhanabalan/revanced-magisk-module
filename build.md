@@ -1,9 +1,9 @@
-YouTube: 18.23.35  
+YouTube: 18.32.39  
 YouTube-Extended: 18.30.37  
-Music (arm-v7a): 6.13.52  
-Music (arm64-v8a): 6.13.52  
-Music-Extended (arm-v7a): 6.13.52  
-Music-Extended (arm64-v8a): 6.13.52  
+Music (arm64-v8a): 6.16.52  
+Music (arm-v7a): 6.16.52  
+Music-Extended (arm64-v8a): 6.16.52  
+Music-Extended (arm-v7a): 6.16.52  
 Instagram: 275.0.0.27.98  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube or YT Music  
@@ -13,24 +13,46 @@ Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for
 ---
 Changelog:  
 CLI: j-hc/revanced-cli-2.23.0-all.jar  
-Integrations: ReVanced/revanced-integrations-0.115.1.apk  
-Patches: ReVanced/revanced-patches-2.187.0.jar  
+Integrations: ReVanced/revanced-integrations-0.116.0.apk  
+Patches: ReVanced/revanced-patches-2.188.0.jar  
 
-### [2.187.0](https://github.com/ReVanced/revanced-patches/compare/v2.186.0...v2.187.0) (2023-08-02)
+### [2.188.0](https://github.com/ReVanced/revanced-patches/compare/v2.187.0...v2.188.0) (2023-08-26)
+
+
 ### Bug Fixes
-* Remove version numbers from individual patches ([#2709](https://github.com/ReVanced/revanced-patches/issues/2709)) ([7a828ea](https://github.com/ReVanced/revanced-patches/commit/7a828ea8826864505fac9b2bdb3a1261d9f4dc35))
-* **Sync for Reddit - Change OAuth client id:** Disable piracy detection ([cd103dd](https://github.com/ReVanced/revanced-patches/commit/cd103dd9b8ff2667246d4abaf75577f28bf1a11b))
-* Use clearer descriptions ([8dbb0e2](https://github.com/ReVanced/revanced-patches/commit/8dbb0e212e8ceeb0381a3509e45afca095ddee53))
-* **YouTube - Spoof app version:** Fix grammar in description ([#2711](https://github.com/ReVanced/revanced-patches/issues/2711)) ([dd249e6](https://github.com/ReVanced/revanced-patches/commit/dd249e62243e57733a6ff4d3a17d30db0e08a84d))
-* **YouTube - Spoof App Version:** Remove 17.30.35 target (version no longer works correctly) ([#2703](https://github.com/ReVanced/revanced-patches/issues/2703)) ([210108b](https://github.com/ReVanced/revanced-patches/commit/210108bd8f86f583f5cd5d5538480b76d51d7776))
-* **YouTube - Theme:** only set splash screen color if background colors are set ([f058db4](https://github.com/ReVanced/revanced-patches/commit/f058db4ba4300400ac92b4a9790708eb8bde7092))
+
+* **Enable android debugging:** Update patch description ([#2869](https://github.com/ReVanced/revanced-patches/issues/2869)) ([d9f0d08](https://github.com/ReVanced/revanced-patches/commit/d9f0d08498662e7aa18edb5201a5d60f3738e4e4))
+* **Reddit is Fun - Spoof client:** Use a more convincing user agent ([236a18f](https://github.com/ReVanced/revanced-patches/commit/236a18f9356cede156417c0d55a876d25a98cd4d))
+* **Tiktok - Show seekbar:** Bump compatibility ([#2737](https://github.com/ReVanced/revanced-patches/issues/2737)) ([08413bd](https://github.com/ReVanced/revanced-patches/commit/08413bdc97aef892f7372c585d1d792eb95e30f4))
+* **YouTube - Client spoof:** Adjust spoof signature settings description ([#2760](https://github.com/ReVanced/revanced-patches/issues/2760)) ([f71d893](https://github.com/ReVanced/revanced-patches/commit/f71d8937663fdbfc93d8e3ce1cdb47e1667554f0))
+* **YouTube Music - Remove upgrade button:** Remove the correct navigation bar item ([fd3813f](https://github.com/ReVanced/revanced-patches/commit/fd3813f66ededdae1e52bf021a3de9d818f65096))
+
+
 ### Features
-* **Joey for Reddit:** Add `Change OAuth client id` patch ([1bac47d](https://github.com/ReVanced/revanced-patches/commit/1bac47df889b5221bef1c03e652f894be8d39385))
-* **Joey for Reddit:** Add `Disable ads` patch ([ad7e147](https://github.com/ReVanced/revanced-patches/commit/ad7e14771208dcab08fd6dc29403b1a4cf602111))
-* **Reddit is Fun - Spoof client:** Spoof the user agent ([b9aaf61](https://github.com/ReVanced/revanced-patches/commit/b9aaf610ad9f1f45a72265a3782d2cf996020139))
-* **Sync for Reddit:** add `Disable Sync for Lemmy bottom sheet` patch ([56b535b](https://github.com/ReVanced/revanced-patches/commit/56b535b2a136d4b0afbddf2c8e251889c2555056))
-* **YouTube - Hide layout components:** Hide `chips shelf` ([#2699](https://github.com/ReVanced/revanced-patches/issues/2699)) ([8e6058b](https://github.com/ReVanced/revanced-patches/commit/8e6058b62350b3d14d79e6fe52b0ad781b66b5de))
-* **YouTube:** add `Player Flyout Menu` patch ([#2295](https://github.com/ReVanced/revanced-patches/issues/2295)) ([aea0af0](https://github.com/ReVanced/revanced-patches/commit/aea0af059784ae4820a0e73ff91f97bbc3ebc4c7))
+
+* Add `Override certificate pinning` patch ([#2781](https://github.com/ReVanced/revanced-patches/issues/2781)) ([94ed738](https://github.com/ReVanced/revanced-patches/commit/94ed738515aa6e1a1d346b85b54805e68e36f94c))
+* **Change package name:** Append `.revanced` to package name by default ([#2750](https://github.com/ReVanced/revanced-patches/issues/2750)) ([e83e62f](https://github.com/ReVanced/revanced-patches/commit/e83e62fc2400caf1c5179d25e0ac4fbd51ddba00))
+* **Duolingo:** Add `Unlock Duolingo Super` patch ([#2862](https://github.com/ReVanced/revanced-patches/issues/2862)) ([61a7533](https://github.com/ReVanced/revanced-patches/commit/61a7533136f38d7a308e31c9f250baad00515d6a))
+* Exclude `Custom branding` patch by default ([d6de957](https://github.com/ReVanced/revanced-patches/commit/d6de957f4efce11d9a709d4c8f500b039166fc2f))
+* **Lightroom:** Add `Disable mandatory login` patch ([#2738](https://github.com/ReVanced/revanced-patches/issues/2738)) ([896a713](https://github.com/ReVanced/revanced-patches/commit/896a71308f1084d7f941c5b59610e40ea5d53009))
+* **Lightroom:** Add `Unlock premium` patch ([#2740](https://github.com/ReVanced/revanced-patches/issues/2740)) ([e18a9bc](https://github.com/ReVanced/revanced-patches/commit/e18a9bcb50705d374ccbf03cd6ab9a140a2f23ec))
+* **Nova Launcher:** Remove `Unlock prime` patch ([bbde91c](https://github.com/ReVanced/revanced-patches/commit/bbde91cf9df4b410a34147bbe5f359e39a71ad4c))
+* **Solid Explorer:** Add `Remove file size limit` patch ([01c617d](https://github.com/ReVanced/revanced-patches/commit/01c617d94e58b30bbffb3426fcfa55b8979962bd))
+* **Strava:** Add `Subscription features` patch ([#2872](https://github.com/ReVanced/revanced-patches/issues/2872)) ([387eb29](https://github.com/ReVanced/revanced-patches/commit/387eb29e7ed45169c89a03513af64104d0082f28))
+* **Tasker:** Remove `Unlock trial` patch ([8354a87](https://github.com/ReVanced/revanced-patches/commit/8354a879cfc6028820e2bb0e01d6f607e145c0f6))
+* **YouTube - Debug:** Logging of layout proto buffer strings ([#2759](https://github.com/ReVanced/revanced-patches/issues/2759)) ([189f719](https://github.com/ReVanced/revanced-patches/commit/189f719720551f36c6e006c45558fe5ae46ca4f8))
+* **YouTube - External downloads:** Recommend Seal instead of PowerTube ([#2803](https://github.com/ReVanced/revanced-patches/issues/2803)) ([082e067](https://github.com/ReVanced/revanced-patches/commit/082e067338026d05046ed5f398a1261aa20d3cb3))
+* **YouTube - Hide video action buttons:** Hide individual action buttons ([#2723](https://github.com/ReVanced/revanced-patches/issues/2723)) ([220f694](https://github.com/ReVanced/revanced-patches/commit/220f694b12e7ed013753c8215d181936ab2205c3))
+* **YouTube Music - Exclusive audio playback:** Support latest version ([0861991](https://github.com/ReVanced/revanced-patches/commit/0861991cfbdfa977713f1f1f4ee8a0a5fd3f939e))
+* **YouTube Music:** Add `Permanent repeat` patch ([#2722](https://github.com/ReVanced/revanced-patches/issues/2722)) ([506d49c](https://github.com/ReVanced/revanced-patches/commit/506d49c82a68faee25aede8194e7884191c0f271))
+* **YouTube Music:** Add `Permanent Shuffle` patch ([#2730](https://github.com/ReVanced/revanced-patches/issues/2730)) ([86a271c](https://github.com/ReVanced/revanced-patches/commit/86a271cd7cc3d1d2a11ff9ebe962574368b93f4f))
+* **YouTube:** Add `Alternative thumbnails` patch ([#2834](https://github.com/ReVanced/revanced-patches/issues/2834)) ([8a4277c](https://github.com/ReVanced/revanced-patches/commit/8a4277c486d995f57cde3a56274979c4a7b42bf6))
+* **YouTube:** Add `Custom player overlay opacity` patch ([#2721](https://github.com/ReVanced/revanced-patches/issues/2721)) ([2622b00](https://github.com/ReVanced/revanced-patches/commit/2622b008ab78b15aa3c28a13b38e63041f29c9ea))
+* **YouTube:** Add `Enable tablet layout` patch ([c89b2aa](https://github.com/ReVanced/revanced-patches/commit/c89b2aa26125d302079b5cf522f3b6c9fbe1257a))
+* **YouTube:** Support version `18.32.39` ([7b503e2](https://github.com/ReVanced/revanced-patches/commit/7b503e2336dd4d330b651bf7c168d95a38e8c777))
+
+
+
 
 ---
 CLI: inotia00/revanced-cli-2.22.2-all.jar  

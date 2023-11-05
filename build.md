@@ -1,10 +1,10 @@
-YouTube: 18.41.35  
-Music-Extended (arm64-v8a): 6.23.54  
-Music-Extended (arm-v7a): 6.23.54  
-YouTube-Extended: 18.41.35  
-Music (arm64-v8a): 6.23.54  
-Music (arm-v7a): 6.23.54  
-Instagram: 305.0.0.34.110  
+YouTube: 18.43.43  
+YouTube-Extended: 18.43.43  
+Music-Extended (arm64-v8a): 6.26.50  
+Music-Extended (arm-v7a): 6.26.50  
+Music (arm64-v8a): 6.26.50  
+Music (arm-v7a): 6.26.50  
+Instagram: 307.0.0.34.111  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube or YT Music  
 
@@ -12,69 +12,32 @@ Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for
 
 ---
 Changelog:  
-CLI: inotia00/revanced-cli-4.0.3-all.jar  
-Integrations: inotia00/revanced-integrations-0.120.1.apk  
-Patches: inotia00/revanced-patches-2.195.1.jar  
+CLI: inotia00/revanced-cli-4.0.4-all.jar  
+Integrations: inotia00/revanced-integrations-0.120.12.apk  
+Patches: inotia00/revanced-patches-2.195.12.jar  
 
 YouTube
 ==
-- feat(YouTube): add support version `v18.40.34`
-- feat(YouTube): add `Custom player overlay opacity` patch
-- feat(YouTube): add `Spoof device dimensions` patch https://github.com/inotia00/ReVanced_Extended/issues/1582
-- feat(YouTube): change patch name `Bypass ambient mode restrictions` → `Ambient mode switch`
-- feat(YouTube): remove `Enable new comment popup panels` patch (It can now be used without a patch even on YouTube v18.24.37, the minimum supported version)
-- feat(YouTube): remove `Hide player overlay filter` patch
-- feat(YouTube/Ambient mode switch): add `Disable ambient mode`, `Disable ambient mode in fullscreen` settings
-- feat(YouTube/Custom speed overlay): remove `Disable speed overlay` settings (fix https://github.com/inotia00/ReVanced_Extended/issues/1574)
-- feat(YouTube/Hide general ads): update adblock filter
-- feat(YouTube/Hide layout components): add `Hide start trial button` settings
-- feat(YouTube/Hide navigation buttons): `Open library on app startup` now also works in the `You` tab (`Open library on app startup` → `Open library(You) on app startup`)
-- feat(YouTube/Hide quick actions): add `Hide open mix playlist button`, `Hide open playlist button` settings https://github.com/inotia00/ReVanced_Extended/issues/1591
-- feat(YouTube/Spoof app version): add target version 18.33.40 - Restore old shorts action bar
-- fix(YouTube/Custom speed overlay): change setting description https://github.com/inotia00/ReVanced_Extended/issues/1575
-- fix(YouTube/Default playback speed): change default value
-- fix(YouTube/Default video quality): video quality toast shows wrong quality value https://github.com/inotia00/ReVanced_Extended/issues/1589
-- fix(YouTube/Disable haptic feedback): separate the `Disable seek undo haptic feedback` setting from the `Disable seek haptic feedback` setting https://github.com/inotia00/ReVanced_Extended/issues/1566
-- fix(YouTube/Enable old quality layout): sometimes patch not working on tablets https://github.com/inotia00/ReVanced_Extended/issues/1507
-- fix(YouTube/Enable wide search bar): wide search bar does not apply to You tab https://github.com/inotia00/ReVanced_Extended/issues/1572
-- fix(YouTube/Force video codec): no longer spoofing device dimensions https://github.com/inotia00/ReVanced_Extended/issues/1582
-- fix(YouTube/Hide button container): change settings name `Hide playlist button` → `Hide save to playlist button`
-- fix(YouTube/Hide latest videos button): `Hide latest videos button` setting is not disabled on tablets https://github.com/inotia00/ReVanced_Extended/issues/1596
-- fix(YouTube/Hide layout components): `Hide official header` doesn't work (A/B tests) https://github.com/inotia00/ReVanced_Extended/issues/1573
-- fix(YouTube/Hide navigation buttons): change description of `Switch create button with notifications button` setting https://github.com/inotia00/ReVanced_Extended/issues/1563
-- fix(YouTube/Hide player button background): fade out animation of the player button background is unnatural
-- fix(YouTube/Hide player flyout panel): change default value
-- fix(YouTube/Hide player flyout panel): If any component belonging to `Additional settings` is hidden, the entire `Additional settings` menu is hidden https://github.com/inotia00/ReVanced_Extended/issues/1569
-- fix(YouTube/Hide player flyout panel): video quality menu is hidden in the old player flyout panel when enabling the Spoof app version
-- fix(YouTube/Hide quick actions): change settings name `Hide playlist button` → `Hide save to playlist button`
-- fix(YouTube/Hide seek message): separate the `Hide seek undo message` setting from the `Hide seek message` setting https://github.com/inotia00/ReVanced_Extended/issues/1566
-- fix(YouTube/Hide shorts components): menu button is not hidden on tablets https://github.com/inotia00/ReVanced_Extended/issues/1567
-- fix(YouTube/Hide shorts components): settings not available on tablets are not disabled on tablets
-- fix(YouTube/Hide shorts components): toolbar buttons in shorts are not hidden unless you include the `Hide toolbar button` patch
-- fix(YouTube/Hide shorts components): `Hide shorts shelf` hides `Official Header` (A/B tests)
-- fix(YouTube/Hide suggestions shelf): change setting description https://github.com/inotia00/ReVanced_Extended/issues/1586
-- fix(YouTube/Hide suggestions shelf): playlist shelf is hidden in You tab on tablet
-- fix(YouTube/Hide toolbar button): create button is not hidden on tablets https://github.com/inotia00/ReVanced_Extended/issues/1568
-- fix(YouTube/Litho filter): no longer using `Lowlevel filter`
+- feat(YouTube): drop support version `v18.41.39`, `v18.42.41` (close https://github.com/inotia00/ReVanced_Extended/issues/1626)
+- feat(YouTube/Overlay buttons): outline icons now also apply to shorts action buttons https://github.com/inotia00/revanced-patches/pull/33
+- fix(YouTube/Enable new splash animation): change default value
+- fix(YouTube/Premium heading): excluded by default
 - feat(YouTube/Translations): update translation
-`Arabic`, `Brazilian`, `Chinese Traditional`, `French`, `German`, `Greek`, `Indonesian`, `Italian`, `Japanese`, `Korean`, `Polish`, `Romanian`, `Russian`, `Spanish`, `Turkish`, `Ukrainian`, `Vietnamese`
+`Arabic`, `Chinese Traditional`, `French`, `German`, `Hungarian`, `Italian`, `Japanese`, `Korean`, `Polish`, `Romanian`, `Turkish`
 
 
 YouTube Music
 ==
-- feat(YouTube Music): add support version `v6.23.54`
-- fix(YouTube Music/Remember playback speed): change default value
 - feat(YouTube Music/Translations): update translation
-`Indonesian`, `Polish`, `Russian`
+`Brazilian`, `Greek`, `Indonesian`, `Polish`, `Romanian`, `Ukrainian`, `Vietnamese`
 
 
 Etc
 ==
-- build: bump dependencies
 - When updating from YouTube v18.33.40 or lower to YouTube v18.34.xx or later, a clean install is recommended.
 
 
-※ Compatible ReVanced Manager: [RVX Manager v1.13.1 (fork)](https://github.com/inotia00/revanced-manager/releases/tag/v1.13.1)
+※ Compatible ReVanced Manager: [RVX Manager v1.14.3 (fork)](https://github.com/inotia00/revanced-manager/releases/tag/v1.14.3)
 [Crowdin translation]
 - [YouTube/European Countries](https://crowdin.com/project/revancedextendedeu)
 - [YouTube/Other Countries](https://crowdin.com/project/revancedextended)
@@ -82,17 +45,34 @@ Etc
 
 ---
 CLI: j-hc/revanced-cli-4.0.2-all.jar  
-Integrations: ReVanced/revanced-integrations-0.120.0.apk  
-Patches: ReVanced/revanced-patches-2.195.0.jar  
+Integrations: ReVanced/revanced-integrations-0.121.0.apk  
+Patches: ReVanced/revanced-patches-2.196.0.jar  
 
-### [2.195.0](https://github.com/ReVanced/revanced-patches/compare/v2.194.0...v2.195.0) (2023-10-20)
+### [2.196.0](https://github.com/ReVanced/revanced-patches/compare/v2.195.0...v2.196.0) (2023-11-04)
+
+
 ### Bug Fixes
-* Indent option description correctly ([d4a9ea1](https://github.com/ReVanced/revanced-patches/commit/d4a9ea1f6c7ab9d25fd60695cce0965c7b5269a4))
-* **Reddit - Sanitize sharing links:** Restore compatibility with newer versions of the app ([1671d8d](https://github.com/ReVanced/revanced-patches/commit/1671d8d826a08273fae5ccffc4a4ebfef9648fe2))
-* **YouTube - Hide layout components:** Hide new channel watermark component ([cbfd569](https://github.com/ReVanced/revanced-patches/commit/cbfd5691d31ed144eac1d23de918ab5a6a905dfa))
-### Features
-* **YouTube - Theme:** Disable gradient loading screen ([90d5877](https://github.com/ReVanced/revanced-patches/commit/90d5877950095b7abacdca979bc7ad709192eee2))
-* **YouTube:** Add `Announcements` patch ([#3166](https://github.com/ReVanced/revanced-patches/issues/3166)) ([f977983](https://github.com/ReVanced/revanced-patches/commit/f97798391ffc3477f781d43817664d31cfcd209a))
-* **YouTube:** Add `Spoof device dimensions` patch ([c8d409e](https://github.com/ReVanced/revanced-patches/commit/c8d409e1dbda6ac45fef01912ce7afad1022b4b7))
 
+* **YouTube - Announcements:** Do not end descriptions with punctuation ([17e414d](https://github.com/ReVanced/revanced-patches/commit/17e414d32b41b66441382d123aa4c16c2547f2c9))
+* **YouTube - Custom branding:** Set default values for patch options ([2ba31f1](https://github.com/ReVanced/revanced-patches/commit/2ba31f13012284f4ae9d556cbaa01dc128f193df))
+* **YouTube - Player flyout menu:** Restore functionality ([#3163](https://github.com/ReVanced/revanced-patches/issues/3163)) ([b5e63c1](https://github.com/ReVanced/revanced-patches/commit/b5e63c11ab21a89e912dd41e307631f479e0ba96))
+* **YouTube - ReturnYouTubeDislike:** Fix RYD prefetching home feed Shorts ([#3195](https://github.com/ReVanced/revanced-patches/issues/3195)) ([f3726fe](https://github.com/ReVanced/revanced-patches/commit/f3726fefb9a80cccbf12f3ec455d1720b385782e))
+* **YouTube - Theme:** Fix patch error ([e6fe646](https://github.com/ReVanced/revanced-patches/commit/e6fe646a7f2ade5f24c0142ad44032ccaf2cc9d0))
+
+
+### Features
+
+* **Digitales Amt:** Bump compatibility to `3.0.2` ([#3217](https://github.com/ReVanced/revanced-patches/issues/3217)) ([79a1571](https://github.com/ReVanced/revanced-patches/commit/79a1571dd674d0cdaae7d00da74b59376ef1550b))
+* **ID Austria:** Constrain compatibility to last working version ([#3196](https://github.com/ReVanced/revanced-patches/issues/3196)) ([79a2416](https://github.com/ReVanced/revanced-patches/commit/79a24164193460acf1b7bac43abdfa2604b02679))
+* **Sony Headphones Connect - Remove notification badge:** Constrain to last working version ([4a7d189](https://github.com/ReVanced/revanced-patches/commit/4a7d18962d85382f358de774d5b2bcc3ab7f4a1a))
+* **YouTube - Announcements:** Clarify announcements origin ([03bb7d3](https://github.com/ReVanced/revanced-patches/commit/03bb7d3cff419c5214cf5bc0e5298e612b678d98))
+* **YouTube - Announcements:** Clarify announcements origin in patch description ([#3175](https://github.com/ReVanced/revanced-patches/issues/3175)) ([0a04500](https://github.com/ReVanced/revanced-patches/commit/0a0450075a6af913de0c8b414103e491e5ff8e72))
+* **YouTube - Client spoof:** Update current video id ([9937b8f](https://github.com/ReVanced/revanced-patches/commit/9937b8fc7e7df6c850073da6faeeb70f82977cd1))
+* **YouTube - Disable precise seeking gesture:** Use better patch name ([88cce59](https://github.com/ReVanced/revanced-patches/commit/88cce592adde46bc2811596772c03d275352be4b))
+* **YouTube - Hide layout components:** Hide video quality menu footer ([0f9e6e7](https://github.com/ReVanced/revanced-patches/commit/0f9e6e751fe4822c92afd7176e6be67d1afe566f))
+* **YouTube - Theme:** Add set of light and dark themes to chose from ([cf6006c](https://github.com/ReVanced/revanced-patches/commit/cf6006cc83909b60acaad374ddaac5de902eb604))
+* **YouTube - Theme:** Improve patch option descriptions ([5d3008a](https://github.com/ReVanced/revanced-patches/commit/5d3008a5afa8961a04ce09782574a4c19343951b))
+* **YouTube:** Add `Disable fullscreen ambient mode` patch ([2a5514a](https://github.com/ReVanced/revanced-patches/commit/2a5514a6b3df076d5bc2cdc4459df30bca18f396))
+* **YouTube:** Add `Disable suggested video end screen` patch ([09f1684](https://github.com/ReVanced/revanced-patches/commit/09f168406c36fb71e12c6c1875a765a86ec2b4f9))
+* **YouTube:** Add `Enable old seekbar thumbnails` patch ([e97e0e6](https://github.com/ReVanced/revanced-patches/commit/e97e0e6631f64e12b8d45d8cacbc059d5fc72e0c))
 ---  
